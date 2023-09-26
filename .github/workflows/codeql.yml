@@ -80,3 +80,9 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         category: "/language:${{matrix.language}}"
+
+    - name: Upload SARIF file as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: codeql-sarif
+        path: /home/runner/work/demo-vulnerable-nodejs/results/javascript.sarif
