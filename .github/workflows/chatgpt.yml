@@ -1,15 +1,10 @@
 name: CodeQL Analysis with ChatGPT Remediation
 
 on:
-  # workflow_run:
-  #   workflows: ["CodeQL"]
-  #   types:
-  #     - completed
-  workflow_call:
-    inputs:
-      arturl:
-        required: true
-        type: string
+  workflow_run:
+    workflows: ["CodeQL"]
+    types:
+      - completed
 
 jobs:
   remediation:

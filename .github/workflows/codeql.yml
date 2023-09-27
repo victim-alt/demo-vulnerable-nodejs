@@ -87,8 +87,3 @@ jobs:
       with:
         name: codeql-sarif
         path: /home/runner/work/demo-vulnerable-nodejs/results/javascript.sarif
-        env-url: arturl
-  sendtocode:
-      uses: victim-alt/demo-vulnerable-nodejs/main/.github/workflows/chatgpt.yml@main
-      with: 
-        arturl: "${{ env.arturl }}"
