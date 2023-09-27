@@ -59,6 +59,14 @@ jobs:
       with:
         name: codeql-sarif
 
+    - name: Check working directory and contents
+      run: |
+        echo "Current Working Directory:"
+        pwd
+        echo "List Directory Contents:"
+        ls -al
+
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
