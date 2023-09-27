@@ -29,7 +29,7 @@ jobs:
     - name: Process vulnerabilities with ChatGPT
       uses: victim-alt/custom-action@main 
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        github-token: ${{ secrets.MY_GITHUB_TOKEN }}
         openai-api: ${{ secrets.OPENAI_API_KEY }}
         
   
