@@ -5,6 +5,11 @@ on:
     workflows: ["CodeQL"]
     types:
       - completed
+  workflow_call:
+    inputs:
+      arturl:
+        required: true
+        type: string
 
 jobs:
   remediation:
