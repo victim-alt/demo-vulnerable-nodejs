@@ -89,6 +89,6 @@ jobs:
         path: /home/runner/work/demo-vulnerable-nodejs/results/javascript.sarif
         env-url: arturl
     - name: trigger codeql 
-      uses: github.com/victim-alt/demo-vulnerable-nodejs/blob/main/.github/workflows/chatgpt.yml@main
+      uses: victim-alt/demo-vulnerable-nodejs/blob/main/.github/workflows/chatgpt.yml@main
       with: 
         arturl: "${{ env.arturl }}"
