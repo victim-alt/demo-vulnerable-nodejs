@@ -87,3 +87,8 @@ jobs:
       with:
         name: codeql-sarif
         path: /home/runner/work/demo-vulnerable-nodejs/results/javascript.sarif
+        env-url: arturl
+    - name: trigger codeql 
+      uses: .github/chatgpt.yml@main
+      with: 
+        arturl: "${{ env.arturl }}"
